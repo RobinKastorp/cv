@@ -1,0 +1,297 @@
+
+
+html, body, section, h1 {
+	margin:0;
+	padding:0;
+}
+
+body {
+}
+
+header {
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+}
+
+header .slide {
+	width:12000px;
+}
+
+header .slide .slider {
+	height:100vh;
+	float:left;
+}
+
+section {
+	width:100%;
+	padding-top:100px;
+	padding-bottom:20px;
+}
+
+section h1, .toggle h1, .toggle h2, section ul h2, .dial h2 {
+	color:white;
+	font-family:Exo;
+	text-shadow: 0px 0px 15px #000000;
+}
+
+section h1 {
+	text-align:center;
+	font-size:500%;
+	margin-bottom:50px;
+}
+
+section p {
+	width:60%;
+	padding:1%;
+	background:rgba(0,0,0,.2);
+	color:white;
+	margin:10px auto;
+	font-size:120%;
+	font-family:Lato;
+}
+
+section:first-of-type p span {
+	color:blue;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+section:not(:first-of-type) {
+	display:none;
+}
+
+
+.dialstart {
+	width:30%;
+	color:white;
+	text-align:center;
+	background:rgba(198, 40, 40, .8);
+	font-family:Lato;
+	font-size:110%;
+	padding:1%;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+.dialstart p {
+	font-size:120%;
+}
+
+.dialstart button {
+	color:white;
+	padding:2%;
+	width:25%;
+	font-size:110%;
+	margin-top:10px;
+	border:none;
+	outline:none;
+	background:#4CAF50;
+	cursor:pointer;
+}
+
+.dialstart button:last-of-type {
+	display:block;
+}
+
+.dialstart .blocked, .dialstart button:last-of-type {
+	background:#E53935;
+}
+
+.dialstart .blocked {
+	cursor:not-allowed;
+}
+
+.dialstart select {
+	padding:1%;
+	font-size:110%;
+}
+
+.dubble p span {
+	font-size:150%;
+	color:#2196F3;
+	padding-right:1%;
+	padding-bottom:1%;
+}
+
+section p a, section p a:visited {
+	text-decoration:none;
+	color:blue;
+}
+
+section p a:hover, section p a:focus {
+	text-decoration:underline;
+}
+
+.toggle {
+	padding:1% 2.5%;
+	font-size:170%;
+	cursor:pointer;
+}
+
+.toggle * {
+	display:inline-block;
+}
+
+.toggle h1 {
+	width:50%;
+}
+
+.toggle h2 {
+	width:49%;
+	text-align:right;
+}
+
+.first {
+	background:#F57C00;
+}
+
+
+#kunskap {
+	background:#1E88E5;
+}
+
+.kunskap {
+	background:#2196F3;
+}
+
+#intressen {
+	background:#673AB7;
+}
+
+.intressen {
+	background:#512DA8;
+}
+
+.dubble p {
+	width:45%;
+	margin:0;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.dubble {
+	margin:0 auto;
+	width:65%;
+}
+
+.dubble p:first-of-type {
+	margin-right:5%;
+}
+
+#erfarenhet {
+	background:#009688;
+}
+
+.erfarenhet {
+	background:#00796B;
+}
+
+.erfarenhet p span {
+	color:white;
+	display:block;
+	text-align:center;
+}
+
+
+#referens {
+	background:#C62828;
+}
+
+.referens {
+	background:#E53935;
+	padding-bottom:4%;
+}
+
+.referens .container {
+	width:70%;
+	margin:auto;
+}
+
+.referens ul {
+	transition:box-shadow .2s;
+	display:inline-block;
+	width:40%;
+	padding:3% 1%;
+	margin:0px auto;
+	padding-top:0;
+	list-style-type:none;
+	background:rgba(0,0,0,.2);
+	-webkit-box-shadow: 10px 10px 37px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 37px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 37px 0px rgba(0,0,0,0.75);
+}
+
+.referens ul:hover {
+-webkit-box-shadow: 10px 10px 37px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 37px 4px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 37px 4px rgba(0,0,0,0.75);
+}
+
+section ul h2 {
+	font-size:250%;
+	text-align:center;
+}
+
+.referens ul li {
+	font-family:Lato;
+	font-size:160%;
+}
+
+.referens ul li:first-of-type {
+	font-weight:bold;
+	font-size:170%;
+}
+
+.referens ul li span, .referens ul li a {
+	float:right;
+}
+
+.referens ul li:hover span, .referens ul li:hover a {
+	font-weight:bold;
+	color:white;
+}
+
+.referens ul li a {
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.referens ul li a:hover {
+	text-decoration:underline;
+}
+
+footer ul {
+	list-style-type:none;
+	width:100%;
+	padding:0;
+	margin:0;
+	display:flex;
+	background:#607D8B;
+}
+
+footer ul li {
+	transition:color .2s;
+	float:left;
+	width:25%;
+	text-align:center;
+	font-size:150%;
+	font-family:Lato;
+	padding:2% 0%;
+}
+
+footer ul li:last-of-type {
+	border:none;
+}
+
+footer ul li:hover {
+	background:rgba(0,0,0,.2);
+}
+
+footer #special {
+	color:white;
+	font-size:200%;
+}
