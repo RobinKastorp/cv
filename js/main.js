@@ -95,11 +95,6 @@ $(function () {
     	$('.dialstart').slideUp();
     });
 
-
-
-
-
-
 });
 
 
@@ -138,5 +133,39 @@ $(function() {
 
   ul.css('float', 'right')
 
+
+});
+
+
+$(function() {
+
+	$('.locked').hide()
+	
+
+	$('.signin').click(function() {
+
+	var username = $('.username').val().toLowerCase();
+	var password = $('.password').val().toLowerCase();
+
+	var user = "guest"
+	var pass = "guest159"
+
+		if(username == user && password == pass) {
+			$('.locked').delay(400).fadeIn('100');
+			$('.login').fadeOut('400');
+		} else {
+			alert('Felaktig inloggnings information har angivits.');
+			$('.username').val("")	
+			$('.password').val("")
+		}
+
+	});
+
+$('input').keypress(function (e) {
+  if (e.which == 13) {
+    $('.signin').click();
+    return false;    //<---- Add this line
+  }
+});
 
 });
